@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Front end route
+|--------------------------------------------------------------------------
+*/
+Route::get('/', 'FrontController@index')->name('front.index');
